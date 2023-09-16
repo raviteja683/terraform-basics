@@ -1,2 +1,2 @@
 city="Vizianagaram"
-state = "AP"
+state="AP"
