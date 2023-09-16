@@ -42,5 +42,5 @@ variable "map_variable" {
   }
 }
 output "print_map" {
-    value= "resource name is ${var.list_variable["name"]} and age is ${var.list_variable["age"]}"
+    value= "resource name is ${var.map_variable["name"]} and age is ${var.map_variable["age"]}"
 }
