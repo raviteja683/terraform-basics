@@ -41,6 +41,6 @@ variable "map_variable" {
     company="Acc"
   }
 }
-output "print_List" {
+output "print_map" {
     value= "resource name is ${var.list_variable[name]} and age is ${var.list_variable[age]}"
 }
