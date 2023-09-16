@@ -51,3 +51,10 @@ variable "city" {
 output "print_city" {
     value= "city name is ${var.city}"
 }
+
+variable "state" {
+}
+output "print_state" {
+    value= "city name is ${var.state}"
+}
+
