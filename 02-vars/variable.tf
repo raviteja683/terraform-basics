@@ -59,6 +59,9 @@ output "print_state" {
 }
 
 # by default variable value get collected from terraform.tfvars and *.tfvars need to call explicity 
+#terraform plan -var-file=explicity_var.tfvars
+#terraform apply -auto-approve -var-file=explicity_var.tfvars 
+
 variable "country" {
 }
 output "print_country" {
