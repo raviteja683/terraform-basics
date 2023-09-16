@@ -17,3 +17,18 @@ variable "number" {
 output "op_number" {
    value = "default value is ${var.number}"
 }
+
+#print list variable
+variable "list_variable" {
+  default = [
+    "ravi",
+    27,
+    "SSE",
+    "Acc"
+
+  ]
+}
+output "print_List" {
+    value= "resource name is ${var.list_variable[0]}"
+  
+}
