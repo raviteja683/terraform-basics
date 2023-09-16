@@ -55,6 +55,12 @@ output "print_city" {
 variable "state" {
 }
 output "print_state" {
-    value= "city name is ${var.state}"
+    value= "state name is ${var.state}"
 }
 
+# by default variable value get collected from terraform.tfvars and *.tfvars need to call explicity 
+variable "country" {
+}
+output "print_country" {
+    value= "country name is ${var.country}"
+}
