@@ -9,3 +9,11 @@ output "op" {
 output "ops" {
   value = "my first terraform message is ${var.sample}"
 }
+
+variable "number" {
+  default = 18
+}
+#printing a variable
+output "op" {
+   value = "default value is ${var.number}"
+}
