@@ -48,6 +48,6 @@ output "print_map" {
 #declaring empty variable and get the value from terraform.tfvars or *.tfvars file
 variable "city" {
 }
-output "print_map" {
+output "print_city" {
     value= "city name is ${var.city}"
 }
