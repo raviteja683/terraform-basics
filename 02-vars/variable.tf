@@ -14,6 +14,6 @@ variable "number" {
   default = 18
 }
 #printing a variable
-output "op" {
+output "op_number" {
    value = "default value is ${var.number}"
 }
