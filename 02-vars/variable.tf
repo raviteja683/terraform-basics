@@ -29,6 +29,6 @@ variable "list_variable" {
   ]
 }
 output "print_List" {
-    value= "resource name is ${var.list_variable[0]}"
+    value= "resource name is ${var.list_variable[0]} and role is ${var.list_variable[2}} "
   
 }
