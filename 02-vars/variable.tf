@@ -64,3 +64,10 @@ variable "country" {
 output "print_country" {
     value= "country name is ${var.country}"
 }
+
+# command line variable
+variable "states_count" {
+}
+output "print_states_count" {
+    value= "India state count is ${var.states_count}"
+}
