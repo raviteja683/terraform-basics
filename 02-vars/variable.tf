@@ -31,3 +31,16 @@ variable "list_variable" {
 output "print_List" {
     value= "resource name is ${var.list_variable[0]} and role is ${var.list_variable[2]}"
 }
+
+#declaring map variable
+variable "map_variable" {
+  default = {
+    name="ravi"
+    age=27
+    role="SSE"
+    company="Acc"
+  }
+}
+output "print_List" {
+    value= "resource name is ${var.list_variable[name]} and age is ${var.list_variable[age]}"
+}
