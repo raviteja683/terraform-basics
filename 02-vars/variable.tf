@@ -44,3 +44,10 @@ variable "map_variable" {
 output "print_map" {
     value= "resource name is ${var.map_variable["name"]} and age is ${var.map_variable["age"]}"
 }
+
+#declaring empty variable and get the value from terraform.tfvars or *.tfvars file
+variable "city" {
+}
+output "print_map" {
+    value= "city name is ${var.city}"
+}
