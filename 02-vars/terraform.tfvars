@@ -1,2 +1,1 @@
 city="Vizianagaram"
-state="AP"
