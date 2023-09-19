@@ -81,5 +81,5 @@ variable "shell_variale" {
 }
 
 output "shell_variale_op" {
-  value = "shell variable value is: ${shell_variale}"
+  value = "shell variable value is: ${var.shell_variale}"
 }
