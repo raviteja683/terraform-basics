@@ -69,8 +69,17 @@ output "print_country" {
 }
 
 # command line variable
+# terraform apply -var-file=explicity_var.tfvars -var states_count=28
 variable "states_count" {
 }
 output "print_states_count" {
     value= "India state count is ${var.states_count}"
+}
+
+#shell variable declaration
+variable "shell_variale" {
+}
+
+output "shell_variale_op" {
+  value = "shell variable value is: ${shell_variale}"
 }
