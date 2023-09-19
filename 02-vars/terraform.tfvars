@@ -1,3 +1,3 @@
 city="Vizianagaram"
 state="AP"
-shell_variale="aws"
+#shell_variale="aws"
