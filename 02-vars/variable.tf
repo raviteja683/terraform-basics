@@ -79,7 +79,7 @@ output "print_states_count" {
 #shell variable declaration
 variable "shell_variale" {
 }
-
+#export TF_VAR_shell_variale=gcp   ->supply shell variable value in cmd
 output "shell_variale_op" {
   value = "shell variable value is: ${var.shell_variale}"
 }
