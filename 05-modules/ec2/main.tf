@@ -9,7 +9,7 @@ resource "aws_instance" "moweb" {
 }
 
 output "private_IP_Address" {
-  value = aws_instance.web.private_dns
+  value = aws_instance.moweb.private_dns
 }
 
 variable "sg" {                 //step 3: declare a variable, or calling variable from main module

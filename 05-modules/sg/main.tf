@@ -1,12 +1,12 @@
 
 #create a security group
-resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
-  description = "Allow SSH inbound traffic"
+resource "aws_security_group" "allows_ssh" {
+  name        = "allows_ssh"
+  description = "Allows SSH inbound traffic"
   //vpc_id      = aws_vpc.main.id
 
   ingress {
-    description      = "SSH from Internet"
+    description      = "SSH from Public internet"
     from_port        = 22
     to_port          = 22
     protocol         = "tcp"
@@ -22,7 +22,7 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name = "allow_ssh"
+    Name = "allows_ssh"
   }
 }
 
