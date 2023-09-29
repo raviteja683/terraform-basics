@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   count  = length(var.instances)
 
   tags = {
-    Name = "${var.count.index}"
+    Name = "${var.instances[count.index]}"
   }
 }
 
