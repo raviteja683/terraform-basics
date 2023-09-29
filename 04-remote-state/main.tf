@@ -15,6 +15,6 @@ resource "aws_instance" "web" {
 }
 
 variable "instances" {
-  value = ["cart","catalogue","user"]
+  ddefault = ["cart","catalogue","user"]
 
 }
