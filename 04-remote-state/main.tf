@@ -15,6 +15,6 @@ resource "aws_instance" "web" {
   }
 }
 variable "howManyYouwant" {
-   default = 1
+   default = 3
 }
 
