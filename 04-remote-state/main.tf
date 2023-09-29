@@ -4,11 +4,10 @@ data "aws_ami" "ami" {
   owners           = ["self"]
 }
 resource "aws_instance" "web" {
-  ami           = "ami-0c1d144c8fdd8d690"
-  //ami           = "data.aws_ami.ami.image_id"
+  //ami           = "ami-0c1d144c8fdd8d690"
+  count         = length(var.instances)
+  ami           = data.aws_ami.ami.image_id
   instance_type = "t3.micro"
-  count  = length(var.instances)
-
   tags = {
     Name = "${var.instances[count.index]}"
   }
