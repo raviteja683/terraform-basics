@@ -18,5 +18,5 @@ variable "instances" {
 }
 
 output "private_IP_Address" {
-  default = aws_instance.web.*.private_dns
+  value = aws_instance.web.*.private_dns
 }
