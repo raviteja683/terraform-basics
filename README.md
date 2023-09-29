@@ -1,4 +1,4 @@
-# terraform-basics
+# terrafrm-basics
 
 This repository contains all the basics that are needed to learn and start with Terraform.
 
