@@ -16,3 +16,7 @@ resource "aws_instance" "web" {
 variable "instances" {
   default = ["cart","catalogue","user"]
 }
+
+output "private_IP_Address" {
+  default = aws_instance.web.*.private_dns
+}
