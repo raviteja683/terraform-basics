@@ -25,3 +25,8 @@ resource "aws_security_group" "allow_ssh" {
     Name = "allow_ssh"
   }
 }
+
+#step1: declare the output of sg and input to ec2
+output "sgid" {
+  value = aws_security_group.allow_ssh.id
+}
