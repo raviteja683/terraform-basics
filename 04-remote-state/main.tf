@@ -4,6 +4,6 @@ resource "aws_instance" "web" {
   count  = 2
 
   tags = {
-    Name = "Terrafrom-web-instance-${count.index}"
+    Name = "Terrafrom-web-instance-${count.index+1}"
   }
 }
